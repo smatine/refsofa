@@ -263,12 +263,12 @@ public class ReferentielApplication implements CommandLineRunner{
      	instanceType.setEbsOptimized(true);
      	instanceType.setNetworkPerformance("001");
      	instanceType = instanceTypeRepository.save(instanceType);
-     	*/
+     	
 		 Region  region = new Region();
 		 region.setName("eu-west-1");
 		 region.setDescription("test");
 		 Region r = regionRepository.save(region);
-	     /*
+	     
 		 Ami ami = new Ami();
 		 ami.setAmiId("001");
      	 ami.setName("001");
@@ -321,7 +321,7 @@ public class ReferentielApplication implements CommandLineRunner{
 		 subnetCidr.setSubnetCidr("10.10.10.10/27");
 		 subnetCidr.setText("10.10.10.10/27");
 		 SubnetCidr sc3 = subnetCidrRepository.save(subnetCidr);
-		 */
+		 
 		 
 		 Trigramme trigramme = new Trigramme();
 		 trigramme.setName("TRI");
@@ -338,7 +338,7 @@ public class ReferentielApplication implements CommandLineRunner{
 		 product.setTrigramme(t);
 		 product.setBastion("bastion");
 		 Product p = productRepository.save(product);
-		 /*
+		 
 		 Account account = new Account();
 		 account.setNumAccount("123456789012");
 		 account.setEnv("DEV");
